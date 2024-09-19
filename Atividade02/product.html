@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">CP-JS</a>
+            <a href="../Atividade02/product.html">Produtos e Carrinho</a>
+            <a href="../Lista de Filmes - Local Storage/filme.html">Filmes</a>
+        </nav>
+    </header>
+
+    <h2 id="produtos">Produtos Disponíveis</h2>
+    <div class="produtos-container">
+        <div class="produto-box">
+            <p>ID: 1</p>
+            <p>Nome: Camiseta</p>
+            <p>Valor: R$29.99</p>
+            <button onclick="adicionarProduto(1, 'Camiseta', 29.99)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto-box">
+            <p>ID: 2</p>
+            <p>Nome: Calça Jeans</p>
+            <p>Valor: R$99.90</p>
+            <button onclick="adicionarProduto(2, 'Calça Jeans', 99.90)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto-box">
+            <p>ID: 3</p>
+            <p>Nome: Tênis</p>
+            <p>Valor: R$149.90</p>
+            <button onclick="adicionarProduto(3, 'Tênis', 149.90)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <h2 id="carrinho">Carrinho de Compras</h2>
+    <ul id="lista-carrinho"></ul>
+
+    <h2>Adicionar Produto pelo ID</h2>
+    <div class="adicionar-produto">
+        <input type="number" id="input-id" placeholder="Digite o ID do produto" min="1">
+        <input type="number" id="input-quantidade" placeholder="Quantidade" value="1" min="1">
+        <button onclick="adicionarPorId()">Adicionar ao Carrinho</button>
+    </div>
+
+    <script src="product.js"></script>
+</body>
+</html>
